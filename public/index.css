@@ -1,0 +1,95 @@
+body {
+    background-color: #f6f6f6;
+}
+
+.strip {
+    height: 500px;
+    width: 100%;
+    background-image: url(pexels-ann-h-1888000.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+main a {
+    color: #26a1cb;
+}
+
+ main a:hover {
+    color: black;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    opacity:1 ;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #0dcaf0;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #0dcaf0 transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+@media (min-width:2000px) {
+    .strip {
+        height: 700px;
+    }
+}
+
+@media (min-width:1600px) {
+    .strip {
+        height: 600px;
+    }
+
+}
+
+@media (max-width:850px) {
+    main {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width:620px) {
+    .strip {
+        height: 400px;
+        background-size: contain;
+        background-image: url(smallpexels-ann-h-1888000.jpg);
+    }
+
+    main {
+        font-size: 0.8em;
+    }
+   
+}
+
+@media (max-width:500px) {
+    main {
+        font-size: 0.7em;
+    }
+}

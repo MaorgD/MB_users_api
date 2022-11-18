@@ -1,0 +1,3 @@
+1.fill in the ENV personal information of moongose
+2.fil in moongoseconnect from mongoose atlas/ deployment/ databsae click connect and replace user name and pass - env prods
+3.npm install in terminal
